@@ -28,7 +28,7 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    background: var(--dark);
+    background: var(--primary);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -73,6 +73,129 @@ nav .inner button {
     font-size: 14px;
     border-radius: 4px;
 }
+
+section.profile {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 60px; 
+    clip-path: polygon(0 0, 100% 0, 100% 80%,25% 100%,0 80%);  
+    padding-bottom: 4rem;
+}
+
+section.profile .left{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+
+section.profile .right{
+    flex: 1;
+}
+
+section.profile .left h2{
+    color: var(--fade);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+
+section.profile .left p{
+    color: var(--mild);
+    font-size: 15px;
+
+}
+
+section.profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
+    background: linear-gradient(to right, var(--secondary), var(--success));
+}
+
+section.profile .left p b {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.profile .left img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+section.profile .left .avater__block {
+    position: relative;
+    margin-right: 2rem;
+
+} 
+section.profile .left .avater__block span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--info);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure);
+    box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+    cursor: pointer;
+
+}
+
+section.profile .right ul.contact{
+    list-style-type: none;
+    margin-bottom: 1.6rem;
+}
+section.profile .right ul.contact li{
+    color: var(--ternary);
+    margin-bottom: .7rem;
+    font-size: 14px;
+}
+
+section.profile .right ul.contact li i{
+    font-size: 18px;
+    margin-right: 0.3rem;
+}
+
+section.profile .right ul.socials{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+section.profile .right ul.socials li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--pure);
+    background: var(--secondary);
+    line-height: 36px;
+    text-align: center;
+}
+section.profile .right ul.socials li:nth-child(1) a {
+    background: var(--secondary);
+}
+section.profile .right ul.socials li:nth-child(2) a {
+    background: var(--secondary);
+}
+
+section.profile .right ul.socials li a{
+    margin-right: .8rem;
+}
+
+
+
+
+
+
+
+
 
 
 
