@@ -76,6 +76,9 @@ nav .inner button {
     font-size: 14px;
     border-radius: 4px;
 }
+nav .inner button a{
+    color: var(--pure);
+}
 
 section.profile {
     background-color: var(--black);
@@ -324,7 +327,7 @@ section.skills .content  p .center{
 }
 
 section.skills .content .item{
-    margin-bottom: 2.6rem;
+    /* margin-bottom: 2.6rem; */
     margin-left: 15px;
     position: relative;
 }
@@ -349,7 +352,7 @@ section.skills .content .item::after{
 section.edu .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* align-items: center; */
 }
 
 section.edu .content  {
